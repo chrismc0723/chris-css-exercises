@@ -8,16 +8,24 @@ body {
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
+/*
+moving .small-para following the fourth tier of the cascade
+which looks at the order the rules are defined in.
+*/
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/*
+changing the .confirm to .button.confirm, making the rule more specific
+*/
+.button.confirm {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +37,10 @@ body {
   font-size: 20px;
 }
 
-.child {
+/*
+adding .text to .child making the rule more specific than previously
+*/
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
